@@ -9,27 +9,29 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <p>tam ad:</p>
-    <input></input>
-    <p>vesiqenin serisi ve nomresi:</p>
-    <input></input>
-    <p>cinsi:</p>
-    <select>
-        <option value="kisi">kisi</option>
-        <option value="qadin">qadin</option>
-    </select>
-    <p>yasi:</p>
-    <input></input>
-    <p>email unvani:</p>
-    <input></input>
-    <p>telefon nomresi:</p>
-    <input></input>
-    <p>simptomlarin tesviri:</p>
-    <textarea></textarea>
-    <div>
+    <form>
+        <p>tam ad:</p>
+        <input id="full-name"></input>
+        <p>vesiqenin serisi ve nomresi:</p>
+        <input id="document-number"></input>
+        <p>cinsi:</p>
+        <select id="gender">
+            <option value="kisi">kisi</option>
+            <option value="qadin">qadin</option>
+        </select>
+        <p>yasi:</p>
+        <input id="age"></input>
+        <p>email unvani:</p>
+        <input id="email"></input>
+        <p>telefon nomresi:</p>
+        <input id="phone-number"></input>
+        <p>simptomlarin tesviri:</p>
+        <textarea id="symptoms-description"></textarea>
+        <div>
         <p class="t">tekrar qebul:</p>
-        <input class="chc" type="checkbox"></input>
-    </div>
-    <button>gonder</button>
+        <input class="chc" type="checkbox" id="repeat-visit"></input>
+        </div>
+        <button type="submit">gonder</button>
+    </form>
 </body>
 </html>
